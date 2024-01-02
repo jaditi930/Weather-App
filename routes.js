@@ -7,9 +7,30 @@ const home=asyncHandler(async (req,res)=>{
 })
 
 const getWeather=asyncHandler(async (req,res)=>{
-    let body=req.body
-    console.log(body)
-    res.status(200).send({"weather":""})
+    let cities=req.body.city
+
+    var temp_array=[]
+    for(let i =0;i<cities.length;i++)
+    {
+        const API_URL=`http://api.weatherapi.com/v1/current.json?key=6ceec29059644f99950211220240201&q=${cities[i]}&aqi=no`
+        await fetch(`${API_URL}`)
+        .then((res)=>res.json())
+        .then((data)=>{
+            try
+            {
+            let temp_c=data.current.temp_c
+            temp_array.push(temp_c)
+            }
+            catch(err)
+            {
+                temp_array.push("Invalid location entered")
+            }
+            console.log(temp_array)
+        })
+
+    }
+    console.log(temp_array)
+    res.status(200).send({"weather":temp_array})
 })
 
 router.get("/home",home)
