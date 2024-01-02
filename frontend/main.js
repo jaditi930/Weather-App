@@ -21,9 +21,9 @@ async function getWeather(){
     console.log(weather)
     for(let i=0;i<weather.length;i++)
     {
-    document.getElementById("result").innerHTML+=
+    document.getElementById("result").innerHTML=
     `
-    <div class="weather-data">Temp at ${city[i]} : ${weather[i]}°C</div>
+    <div class="weather-data">Temp at ${city[i]} : ${weather[i]}</div>
     `
     }
 

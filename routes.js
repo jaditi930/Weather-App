@@ -19,7 +19,7 @@ const getWeather=asyncHandler(async (req,res)=>{
         .then((data)=>{
             try
             {
-            let temp_c=data.current.temp_c
+            let temp_c=data.current.temp_c+"C"
             temp_array.push(temp_c)
             }
             catch(err)
