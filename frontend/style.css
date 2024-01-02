@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("./scenery.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit-btn{
+    text-align: center;
+}
+#btn{
+    background-color: white;
+    border-radius: 50px;
+}
+label{
+    display: block;
+}
+.card{
+    width:500px;
+    height: 500px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+}
+form>div{
+    margin:20px;
+}
+form>div>*{
+    padding: 10px;
+}
+#heading{
+    text-align: center
+    
+    ;
+}
