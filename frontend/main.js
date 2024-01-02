@@ -4,7 +4,7 @@ async function getWeather(){
     var city=document.getElementById("cities").value.split(",")
     console.log(city)
 
-    await fetch("http://127.0.0.1:5000/api/getWeather",{
+    await fetch("https://weather-api-assn.onrender.com/api/getWeather",{
         method:"POST",
         headers: {
             'Content-Type':'application/json',
