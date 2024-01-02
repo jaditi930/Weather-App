@@ -8,7 +8,7 @@
 </head>
 <body>
         <div class="card">
-            <form method="POST" id="weather-form">
+            <div id="form">
                 <div>
                     <h1 id="heading">Weather App</h1>
                 </div>
@@ -17,10 +17,11 @@
                     <textarea name="cities" id="cities" cols="50" rows="1"></textarea>
                 </div>
                 <div id="submit-btn">
-                    <button type="submit" id="btn">Get current weather</button>
+                    <button id="btn" onclick="getWeather()">Get current weather</button>
                 </div>
-            </form>
+            </div>
         </div>
        
+    <script src="main.js"></script>
 </body>
 </html>

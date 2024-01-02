@@ -8,6 +8,7 @@ const home=asyncHandler(async (req,res)=>{
 
 const getWeather=asyncHandler(async (req,res)=>{
     let cities=req.body.city
+    console.log(cities)
 
     var temp_array=[]
     for(let i =0;i<cities.length;i++)
