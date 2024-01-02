@@ -8,20 +8,29 @@
 </head>
 <body>
         <div class="card">
+
             <div id="form">
+
                 <div>
                     <h1 id="heading">Weather App</h1>
                 </div>
+
                 <div>
                     <label for="cities">Enter name of cities (seperated by comma):</label>
-                    <textarea name="cities" id="cities" cols="50" rows="1"></textarea>
+                    <input type="text" name="cities" id="cities"></input>
                 </div>
+
                 <div id="submit-btn">
                     <button id="btn" onclick="getWeather()">Get current weather</button>
                 </div>
+                
             </div>
-        </div>
-       
+
+            <div id="result">
+                
+            </div>
+
+        </div>       
     <script src="main.js"></script>
 </body>
 </html>

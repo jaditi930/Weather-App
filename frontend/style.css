@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,32 +15,55 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.card{
+    width:500px;
+    max-width: 90%;
+    height: 500px;
+    max-height: 90%;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+#heading{
+    text-align: center;
+}
+
+#form>div{
+    font-size: 16px;
+    margin:20px;
+}
+
+#form>div>*{
+    padding: 10px;
+}
+
 #submit-btn{
     text-align: center;
 }
+
 #btn{
     background-color: white;
     border-radius: 50px;
 }
-label{
-    display: block;
+
+.weather-data{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
-.card{
-    width:500px;
-    height: 500px;
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 30px;
-}
-#form>div{
-    margin:20px;
-}
-#form>div>*{
-    padding: 10px;
-}
-#heading{
-    text-align: center
-    
-    ;
+
+#result{
+    height: 200px;
+    overflow:auto;
 }
